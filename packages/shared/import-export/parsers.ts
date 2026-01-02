@@ -111,7 +111,7 @@ function parseMatterBookmarkFile(textContent: string): ParsedBookmark[] {
     "In Queue": z.string().transform((inQueue) => inQueue === "False"),
     Favorited: z.string(),
     Read: z.string(),
-    Highlight_Count: z.string(),
+    "Highlight Count": z.string(),
     "Last Interaction Date": z
       .string()
       .transform((date) => Date.parse(date) / 1000),
